@@ -18,13 +18,19 @@ body {
 
 .main {
     // background-image: url(../img/bg-img1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
+    // background-blend-mode: multiply;
     height: 100vh;
-    background-blend-mode: multiply;
-    background-color: grey;
+    background-color: white;
+
+    .content-container {
+        background-color: grey;
+        height: 500px;
+        margin: 10.6em 200px 0 200px;
+    }
 
     // .png {
     //     background-image: url(../img/triangles.png);
