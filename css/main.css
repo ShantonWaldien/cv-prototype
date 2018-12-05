@@ -1,0 +1,71 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0; }
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+/******* Main Landing Page *******/
+.main {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  background-blend-mode: multiply;
+  background-color: grey; }
+
+/******** Navigation Bar styling starts here ******/
+nav {
+  transition: all 300ms ease-in-out;
+  position: fixed;
+  width: 100%;
+  padding: 0.5rem 0;
+  opacity: 1;
+  text-align: center; }
+  nav .logo {
+    padding: 30px;
+    width: 300px;
+    align-content: center; }
+  nav:hover {
+    box-shadow: 0 5px 40px whitesmoke; }
+
+.nav-colored {
+  background-color: #222222; }
+
+.nav-height {
+  padding: 0; }
+
+nav > ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  list-style: none;
+  transition: all 300ms ease-in-out; }
+  nav > ul button {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    font-size: 1.4rem;
+    margin: 15px;
+    background-color: #eeeeee00;
+    border: none;
+    border-radius: 10px; }
+    nav > ul button:hover li {
+      transform: scale(1.15, 1.15);
+      color: whitesmoke;
+      box-shadow: 0 3px 0 -2px whitesmoke; }
+  nav > ul li {
+    text-transform: uppercase;
+    width: auto;
+    font-size: 0.8em;
+    display: inline-table;
+    padding: 0 auto;
+    transition: all 300ms ease-in-out; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,40 @@
+@import 'partials/_variables';
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+} 
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/******* Main Landing Page *******/
+
+.main {
+    // background-image: url(../img/bg-img1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    background-blend-mode: multiply;
+    background-color: grey;
+
+    // .png {
+    //     background-image: url(../img/triangles.png);
+    //     background-size: cover;
+    //     height: 100vh;
+    //     opacity: 0.1;
+    //     z-index: 0;
+    // }
+
+}
+
+
+

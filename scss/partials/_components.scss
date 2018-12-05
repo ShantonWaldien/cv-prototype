@@ -1,0 +1,72 @@
+@import 'partials/_variables';
+
+/******** Navigation Bar styling starts here ******/
+
+nav {
+    transition: all 300ms ease-in-out;
+    position: fixed;
+    width: 100%;
+    padding: 0.5rem 0;
+    opacity: 1;
+    text-align: center;
+
+    .logo {
+        padding: 30px;
+        width: 300px;
+        // position: absolute;
+        align-content: center;
+    }
+
+    &:hover {
+        box-shadow: 0 5px 40px $primary-color;
+    }
+
+}
+
+// Styling for Navbar on scroll color change and size
+
+.nav-colored {
+    background-color: $tertiary-color;
+}
+
+.nav-height {
+    padding: 0;
+}
+
+nav > ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    list-style: none;
+    transition: all 300ms ease-in-out;
+
+    button {
+        color:black;
+        font-family: 'Raleway', sans-serif;
+        position: relative;
+        font-size: 1.4rem;
+        margin: 15px;
+        background-color: #eeeeee00;
+        border: none;
+        border-radius: 10px;
+
+
+        &:hover li {
+            transform: scale(1.15,1.15);
+            color: whitesmoke;
+            box-shadow: 0 3px 0 -2px $primary-color;
+        }
+        
+    }
+
+    li {
+        text-transform: uppercase;
+        width: auto;
+        font-size: 0.8em;
+        display: inline-table;
+        padding: 0 auto;
+        transition: all 300ms ease-in-out;
+    }
+
+}
