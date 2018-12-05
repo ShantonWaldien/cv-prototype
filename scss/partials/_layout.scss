@@ -27,6 +27,41 @@
                 .grid-item {
                     padding: 3em 0.5rem;
                     color: $tertiary-color;
+
+                    .line {
+                        padding: 0;
+                        margin: 0;
+                        color: $primary-color;
+                        width: 5.3em;
+                        border-right: 2px solid black;
+                        font-size: 1.5em;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        transform: translateY(-50%);
+                   }
+
+                    .anim-typewriter {
+                        animation: typewriter 2s steps(40) 1s 1 normal both,
+                        blinkTextCursor 500ms steps(40) infinite normal;
+                    }
+                   
+                   @keyframes typewriter {
+                        from {
+                              width: 0;
+                        }
+                        to {
+                              width: 8em;
+                        }
+                   }
+                   
+                   @keyframes blinkTextCursor {
+                        from {
+                              border-right-color: black;
+                        }
+                        to {
+                              border-right-color: transparent;
+                        }
+                    }
                     
                     h1 {
                         font-size: 36px;

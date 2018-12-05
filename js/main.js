@@ -13,3 +13,5 @@ window.addEventListener('scroll', function (e) {
             nav.classList.remove('nav-text');
         }
 });
+
+/********** Typewriter Effect **********/
