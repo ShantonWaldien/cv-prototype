@@ -12,13 +12,12 @@ nav {
     top: 0;
 
     .logo {
-        padding: 30px 30px 0 30px;
+        padding: 8px 30px 0 30px;
         width: 300px;
         align-content: center;
     }
 
     .title {
-        font-family: 'Raleway', sans-serif;
         font-weight: 100;
         margin: 0;
         padding: 0;
@@ -28,17 +27,30 @@ nav {
     &:hover {
         box-shadow: 0 5px 40px $tertiary-color;
     }
-
 }
 
 // Styling for Navbar on scroll color change and size
 
 .nav-colored {
-    background-color: $tertiary-color;
+    background-color: $primary-color;
 }
 
 .nav-height {
     padding: 0;
+}
+
+.nav-text {
+    
+    button {
+        color: $secondary-color;
+
+        &:hover li {
+            transform: scale(1.15,1.15);
+            color: black;
+            box-shadow: 0 3px 0 -2px black;
+        }
+    }
+
 }
 
 nav > ul {
@@ -65,7 +77,7 @@ nav > ul {
             transform: scale(1.15,1.15);
             color: $primary-color;
             box-shadow: 0 3px 0 -2px $primary-color;
-        }
+        } 
         
     }
 
@@ -85,6 +97,5 @@ nav > ul {
 .main-container {
     padding-top: 240px;
     padding: 0 50px 0 50px;
-    background-color: red;
     height: 200px;
 }

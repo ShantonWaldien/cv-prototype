@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Open Sans Condensed', sans-serif; }
 
 * {
   box-sizing: border-box; }
@@ -14,9 +14,8 @@ body {
   height: 100vh;
   background-color: white; }
   .main .content-container {
-    background-color: grey;
     height: 500px;
-    margin: 10.6em 200px 0 200px; }
+    margin: 10em 200px 0 200px; }
 
 /******** Navigation Bar styling starts here ******/
 nav {
@@ -28,11 +27,10 @@ nav {
   text-align: center;
   top: 0; }
   nav .logo {
-    padding: 30px 30px 0 30px;
+    padding: 8px 30px 0 30px;
     width: 300px;
     align-content: center; }
   nav .title {
-    font-family: 'Raleway', sans-serif;
     font-weight: 100;
     margin: 0;
     padding: 0;
@@ -41,10 +39,17 @@ nav {
     box-shadow: 0 5px 40px #222222; }
 
 .nav-colored {
-  background-color: #222222; }
+  background-color: maroon; }
 
 .nav-height {
   padding: 0; }
+
+.nav-text button {
+  color: whitesmoke; }
+  .nav-text button:hover li {
+    transform: scale(1.15, 1.15);
+    color: black;
+    box-shadow: 0 3px 0 -2px black; }
 
 nav > ul {
   width: 100%;
@@ -79,7 +84,56 @@ nav > ul {
 .main-container {
   padding-top: 240px;
   padding: 0 50px 0 50px;
-  background-color: red;
   height: 200px; }
+
+html {
+  scroll-behavior: smooth;
+  margin: 0; }
+
+body {
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+/******* Main Landing Page *******/
+.main {
+  height: 100vh;
+  background-color: white; }
+  .main .content-container {
+    height: 500px;
+    margin: 10em 200px 0 200px; }
+
+/******* Content Container *******/
+.content-container .content-container-grid {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-gap: 20px;
+  height: 100%;
+  padding: 20px; }
+  .content-container .content-container-grid .content-grid-item {
+    height: 100%; }
+    .content-container .content-container-grid .content-grid-item .bio-grid-container {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      width: 100%;
+      height: 100%;
+      grid-gap: 10px;
+      color: #222222;
+      font-family: 'Open Sans Condensed', sans-serif; }
+      .content-container .content-container-grid .content-grid-item .bio-grid-container .grid-item {
+        padding: 3em 0.5rem;
+        color: #222222; }
+        .content-container .content-container-grid .content-grid-item .bio-grid-container .grid-item h1 {
+          font-size: 36px;
+          font-weight: 100;
+          font-family: 'Kristi', cursive;
+          margin: 0; }
+        .content-container .content-container-grid .content-grid-item .bio-grid-container .grid-item p {
+          font-weight: 600; }
+        .content-container .content-container-grid .content-grid-item .bio-grid-container .grid-item:hover {
+          transition: all 500ms ease-in-out;
+          box-shadow: 0 5px 40px #222222; }
 
 /*# sourceMappingURL=main.css.map */
