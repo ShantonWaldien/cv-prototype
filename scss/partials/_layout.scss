@@ -92,5 +92,28 @@
 
 /***** Work Page Styling ******/
 
+.main {
 
+    .content-container {
+        
+        .work-grid-container {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 20px;
+            height: 100%;
+            padding: 20px;
+
+            .work-grid-item {
+                background-color: red;
+            }
+
+            .prsa {
+                background-image: url(../img/prsa.png);
+                background-size: cover;
+                background-position: center center;
+                width: 100px;
+            }
+        }
+    }
+}
 
