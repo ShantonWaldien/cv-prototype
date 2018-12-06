@@ -53,6 +53,9 @@ nav {
   opacity: 1;
   text-align: center;
   top: 0; }
+  nav a {
+    text-decoration: none;
+    color: #222222; }
   nav .logo {
     padding: 8px 30px 0 30px;
     width: 300px;
@@ -62,8 +65,6 @@ nav {
     margin: 0;
     padding: 0;
     font-size: 1.8em; }
-  nav:hover {
-    box-shadow: 0 5px 40px #222222; }
 
 .nav-colored {
   background-color: maroon; }
@@ -96,6 +97,10 @@ nav > ul {
     border: none;
     border-radius: 10px; }
     nav > ul button:hover li {
+      transform: scale(1.15, 1.15);
+      color: maroon;
+      box-shadow: 0 3px 0 -2px maroon; }
+    nav > ul button:active li {
       transform: scale(1.15, 1.15);
       color: maroon;
       box-shadow: 0 3px 0 -2px maroon; }
@@ -160,6 +165,7 @@ footer {
   background-image: url(../img/gmail.png); }
 
 /******* Content Container *******/
+/***** About Page Styling ******/
 .content-container .content-container-grid {
   display: grid;
   grid-template-columns: 0.3fr 1fr;
@@ -211,5 +217,6 @@ footer {
     border-right-color: black; }
   to {
     border-right-color: transparent; } }
+/***** Work Page Styling ******/
 
 /*# sourceMappingURL=main.css.map */
