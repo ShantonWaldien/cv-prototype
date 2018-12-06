@@ -105,13 +105,18 @@
 
             .work-grid-item {
                 background-color: red;
+                display: flex;
+                align-items: center; 
+                justify-content: center; 
             }
 
             .prsa {
-                background-image: url(../img/prsa.png);
-                background-size: cover;
-                background-position: center center;
-                width: 100px;
+                width: 100%;
+
+                img {
+                    width: 40%;
+                    padding: 10px;
+                }
             }
         }
     }
