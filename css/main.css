@@ -12,10 +12,29 @@ body {
 /******* Main Landing Page *******/
 .main {
   height: 100vh;
-  background-color: white; }
+  background-color: white;
+  /********* Footer *********/ }
   .main .content-container {
-    height: 500px;
-    margin: 10em 200px 0 200px; }
+    height: 100%;
+    padding: 10em 20em 6em 20em; }
+  .main .social {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 35px; }
+  .main .github {
+    background-image: url(../img/github.png); }
+  .main .linkedin {
+    background-image: url(../img/linkedin.png); }
+  .main .gmail {
+    background-image: url(../img/gmail.png); }
 
 /******** Navigation Bar styling starts here ******/
 nav {
@@ -45,7 +64,7 @@ nav {
   padding: 0; }
 
 .nav-text button {
-  color: whitesmoke; }
+  color: white; }
   .nav-text button:hover li {
     transform: scale(1.15, 1.15);
     color: black;
@@ -100,10 +119,29 @@ body {
 /******* Main Landing Page *******/
 .main {
   height: 100vh;
-  background-color: white; }
+  background-color: white;
+  /********* Footer *********/ }
   .main .content-container {
-    height: 500px;
-    margin: 10em 200px 0 200px; }
+    height: 100%;
+    padding: 10em 20em 6em 20em; }
+  .main .social {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 35px; }
+  .main .github {
+    background-image: url(../img/github.png); }
+  .main .linkedin {
+    background-image: url(../img/linkedin.png); }
+  .main .gmail {
+    background-image: url(../img/gmail.png); }
 
 /******* Content Container *******/
 .content-container .content-container-grid {
@@ -112,6 +150,13 @@ body {
   grid-gap: 20px;
   height: 100%;
   padding: 20px; }
+  .content-container .content-container-grid .grid-image {
+    background-image: url(../img/me.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid maroon;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px; }
   .content-container .content-container-grid .content-grid-item {
     height: 100%; }
     .content-container .content-container-grid .content-grid-item .grid-item {
@@ -120,11 +165,16 @@ body {
       .content-container .content-container-grid .content-grid-item .grid-item h1 {
         font-size: 36px;
         font-weight: 100;
-        font-family: 'Kristi', cursive;
         margin: 0; }
+      .content-container .content-container-grid .content-grid-item .grid-item .middle {
+        margin-top: 100px; }
       .content-container .content-container-grid .content-grid-item .grid-item p {
         font-weight: 600; }
+      .content-container .content-container-grid .content-grid-item .grid-item .intro {
+        margin: 0 0 10px 0; }
       .content-container .content-container-grid .content-grid-item .grid-item .line {
+        font-weight: 600;
+        letter-spacing: 3px;
         padding: 0;
         margin: 0;
         color: maroon;
@@ -140,7 +190,7 @@ body {
   from {
     width: 0; }
   to {
-    width: 8em; } }
+    width: 12em; } }
 @keyframes blinkTextCursor {
   from {
     border-right-color: black; }

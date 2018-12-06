@@ -12,6 +12,17 @@
         height: 100%;
         padding: 20px;
 
+        .grid-image {
+            background-image: url(../img/me.jpg);
+            // background-position-y: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 1px solid $primary-color;
+            border-bottom-left-radius: 200px;
+            border-top-right-radius: 200px;
+            
+        }
+
         .content-grid-item {
             height: 100%;
             
@@ -22,15 +33,24 @@
                 h1 {
                     font-size: 36px;
                     font-weight: 100;
-                    font-family: 'Kristi', cursive;
                     margin: 0;
+                }
+
+                .middle {
+                    margin-top: 100px; 
                 }
 
                 p {
                     font-weight: 600;
                 }
 
+                .intro {
+                    margin: 0 0 10px 0;
+                }
+
                 .line {
+                    font-weight: 600;
+                    letter-spacing: 3px;
                     padding: 0;
                     margin: 0;
                     color: $primary-color;
@@ -52,7 +72,7 @@
                           width: 0;
                     }
                     to {
-                          width: 8em;
+                          width: 12em;
                     }
                }
                
@@ -71,3 +91,4 @@
                 
     }
 }
+

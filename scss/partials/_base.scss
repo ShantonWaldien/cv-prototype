@@ -17,18 +17,46 @@ body {
 /******* Main Landing Page *******/
 
 .main {
-    // background-image: url(../img/bg-img1.jpg);
+    // background-image: url(../img/abstractn.jpg);
     // background-position: center center;
     // background-repeat: no-repeat;
     // background-size: cover;
     // background-attachment: fixed;
     // background-blend-mode: multiply;
     height: 100vh;
-    background-color: white;
+    background-color: $secondary-color;
 
     .content-container {
-        height: 500px;
-        margin: 10em 200px 0 200px;
+        height: 100%;
+        padding: 10em 20em 6em 20em;
+    }
+
+    /********* Footer *********/
+
+    .social {
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 35px;
+    }
+
+    .github {
+        background-image: url(../img/github.png) ;
+    }
+
+    .linkedin {
+        background-image: url(../img/linkedin.png) ;
+    }
+
+    .gmail {
+        background-image: url(../img/gmail.png) ;
     }
 
     // .png {
