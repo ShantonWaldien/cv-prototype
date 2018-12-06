@@ -11,30 +11,38 @@ body {
 
 /******* Main Landing Page *******/
 .main {
-  height: 100vh;
-  background-color: white;
-  /********* Footer *********/ }
+  height: 90vh;
+  background-color: white; }
   .main .content-container {
     height: 100%;
     padding: 10em 20em 6em 20em; }
-  .main .social {
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 35px; }
-  .main .github {
-    background-image: url(../img/github.png); }
-  .main .linkedin {
-    background-image: url(../img/linkedin.png); }
-  .main .gmail {
-    background-image: url(../img/gmail.png); }
+
+/********* Footer *********/
+footer {
+  height: 10vh;
+  padding: 0 20em 0 20em; }
+
+.social {
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 300ms ease-in-out; }
+  .social:hover {
+    transform: scale(1.15, 1.15); }
+
+.github {
+  background-image: url(../img/github.png); }
+
+.linkedin {
+  background-image: url(../img/linkedin.png); }
+
+.gmail {
+  background-image: url(../img/gmail.png); }
 
 /******** Navigation Bar styling starts here ******/
 nav {
@@ -118,30 +126,38 @@ body {
 
 /******* Main Landing Page *******/
 .main {
-  height: 100vh;
-  background-color: white;
-  /********* Footer *********/ }
+  height: 90vh;
+  background-color: white; }
   .main .content-container {
     height: 100%;
     padding: 10em 20em 6em 20em; }
-  .main .social {
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 35px; }
-  .main .github {
-    background-image: url(../img/github.png); }
-  .main .linkedin {
-    background-image: url(../img/linkedin.png); }
-  .main .gmail {
-    background-image: url(../img/gmail.png); }
+
+/********* Footer *********/
+footer {
+  height: 10vh;
+  padding: 0 20em 0 20em; }
+
+.social {
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 300ms ease-in-out; }
+  .social:hover {
+    transform: scale(1.15, 1.15); }
+
+.github {
+  background-image: url(../img/github.png); }
+
+.linkedin {
+  background-image: url(../img/linkedin.png); }
+
+.gmail {
+  background-image: url(../img/gmail.png); }
 
 /******* Content Container *******/
 .content-container .content-container-grid {
@@ -155,10 +171,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid maroon;
-    border-bottom-left-radius: 200px;
-    border-top-right-radius: 200px; }
+    border-bottom-left-radius: 120px;
+    border-top-right-radius: 120px; }
   .content-container .content-container-grid .content-grid-item {
-    height: 100%; }
+    height: 100%;
+    font-size: 13px; }
     .content-container .content-container-grid .content-grid-item .grid-item {
       padding: 3em 0.5rem;
       color: #222222; }
@@ -167,11 +184,9 @@ body {
         font-weight: 100;
         margin: 0; }
       .content-container .content-container-grid .content-grid-item .grid-item .middle {
-        margin-top: 100px; }
+        margin-top: 30px; }
       .content-container .content-container-grid .content-grid-item .grid-item p {
         font-weight: 600; }
-      .content-container .content-container-grid .content-grid-item .grid-item .intro {
-        margin: 0 0 10px 0; }
       .content-container .content-container-grid .content-grid-item .grid-item .line {
         font-weight: 600;
         letter-spacing: 3px;

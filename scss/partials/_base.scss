@@ -17,13 +17,7 @@ body {
 /******* Main Landing Page *******/
 
 .main {
-    // background-image: url(../img/abstractn.jpg);
-    // background-position: center center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-attachment: fixed;
-    // background-blend-mode: multiply;
-    height: 100vh;
+    height: 90vh;
     background-color: $secondary-color;
 
     .content-container {
@@ -31,42 +25,41 @@ body {
         padding: 10em 20em 6em 20em;
     }
 
-    /********* Footer *********/
+}
 
-    .social {
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 35px;
+/********* Footer *********/
+
+footer {
+    height: 10vh;
+    padding: 0 20em 0 20em;
+}
+
+.social {
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 300ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.15,1.15);
     }
+}
 
-    .github {
-        background-image: url(../img/github.png) ;
-    }
+.github {
+    background-image: url(../img/github.png) ;
+}
 
-    .linkedin {
-        background-image: url(../img/linkedin.png) ;
-    }
+.linkedin {
+    background-image: url(../img/linkedin.png) ;
+}
 
-    .gmail {
-        background-image: url(../img/gmail.png) ;
-    }
-
-    // .png {
-    //     background-image: url(../img/triangles.png);
-    //     background-size: cover;
-    //     height: 100vh;
-    //     opacity: 0.1;
-    //     z-index: 0;
-    // }
-
+.gmail {
+    background-image: url(../img/gmail.png) ;
 }
 
 

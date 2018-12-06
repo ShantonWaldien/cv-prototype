@@ -14,4 +14,3 @@ window.addEventListener('scroll', function (e) {
         }
 });
 
-/********** Typewriter Effect **********/
