@@ -95,16 +95,15 @@
 .main {
 
     .content-container {
-        
+
         .work-grid-container {
             display: grid;
-            grid-template-rows: 1fr 1fr;
-            grid-gap: 20px;
+            grid-template-rows: 1fr 2fr;
+            grid-gap: 5px;
             height: 100%;
-            padding: 20px;
+            margin: -3em 0 0 0;
 
             .work-grid-item {
-                background-color: red;
                 display: flex;
                 align-items: center; 
                 justify-content: center; 
@@ -114,9 +113,16 @@
                 width: 100%;
 
                 img {
-                    width: 40%;
                     padding: 10px;
+                    width: 30%;
                 }
+            }
+
+            .description {
+                font-weight: 600;
+                font-size: 15px;
+                padding: 15px;
+                display: block;
             }
         }
     }
