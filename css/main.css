@@ -22,8 +22,8 @@ body {
   height: 90vh;
   background-color: white; }
   .main .content-container {
-    height: 100vh;
-    padding: 10em 8em 5em 10em; }
+    height: 70vh;
+    padding: 4em 8em 5em 10em; }
 
 /********* Footer *********/
 footer {
@@ -151,8 +151,8 @@ body {
   height: 90vh;
   background-color: white; }
   .main .content-container {
-    height: 100vh;
-    padding: 10em 8em 5em 10em; }
+    height: 70vh;
+    padding: 4em 8em 5em 10em; }
 
 /********* Footer *********/
 footer {
@@ -262,7 +262,7 @@ footer {
   from {
     width: 0; }
   to {
-    width: 12em; } }
+    width: 8em; } }
 @keyframes blinkTextCursor {
   from {
     border-right-color: black; }
