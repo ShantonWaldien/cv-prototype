@@ -10,10 +10,11 @@ nav {
     opacity: 1;
     text-align: center;
     top: 0;
+    color: $secondary-color;
 
     a {
         text-decoration: none;
-        color: $tertiary-color;
+        color: $secondary-color;
     }
 
     .logo {
@@ -33,7 +34,7 @@ nav {
 // Styling for Navbar on scroll color change and size
 
 .nav-colored {
-    background-color: $primary-color;
+    background-color: $tertiary-color;
 }
 
 .nav-height {
@@ -47,8 +48,8 @@ nav {
 
         &:hover li {
             transform: scale(1.15,1.15);
-            color: black;
-            box-shadow: 0 3px 0 -2px black;
+            color: $secondary-color;
+            box-shadow: 0 3px 0 -2px $secondary-color;
         }
     }
 
@@ -76,8 +77,8 @@ nav > ul {
 
         &:hover li {
             transform: scale(1.15,1.15);
-            color: $primary-color;
-            box-shadow: 0 3px 0 -2px $primary-color;
+            color: $secondary-color;
+            box-shadow: 0 3px 0 -2px $secondary-color;
         }  
         
         &:active li {

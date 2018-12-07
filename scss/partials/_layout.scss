@@ -1,6 +1,57 @@
 @import 'partials/_variables',
         'partials/_base';
 
+
+
+.hero-background {
+    text-align: center;
+
+    .container {
+        padding: 10em 0 10em 0;
+
+
+        .hello {
+            font-family: 'Amatic SC', cursive;
+            text-transform: none;
+            font-size: 3.5em;
+            letter-spacing: 8px;
+            line-height: 1em;
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        .name {
+            background-attachment: fixed;
+            font-family: sans-serif;
+            font-size: 70px;
+            font-weight: 900;
+            background-position: center center;
+            background-size: cover;
+            text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.1);
+            -webkit-text-fill-color: transparent;
+            background-image: url(../img/abstract3.jpg);
+            background-position: center center;
+            background-size: cover;
+            -webkit-background-clip: text;
+        }
+
+        .title {
+            padding: 0;
+            font-family: 'Kristi', cursive;
+		    text-transform: none;
+		    font-size: 3.5em;
+		    letter-spacing: 8px;
+            color: whitesmoke;
+            text-align: center;
+            margin-top: 0;
+            font-weight: 100;
+        }
+
+    }
+
+    
+}
+
 /******* Content Container *******/
 
 /***** About Page Styling ******/
@@ -10,15 +61,13 @@
     .content-container-grid {
         display: grid;
         grid-template-columns: 0.3fr 1fr;
-        grid-gap: 20px;
-        height: 100%;
+        grid-gap: 100px;
         padding: 20px;
 
         .grid-image {
-            background-image: url(../img/me.jpg);
+            background-image: url(../img/me1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            border: 1px solid $primary-color;
             border-bottom-left-radius: 120px;
             border-top-right-radius: 120px;
             
@@ -26,7 +75,7 @@
 
         .content-grid-item {
             height: 100%;
-            font-size: 15px;
+            font-size: 16px;
             
             .grid-item {
                 padding: 3em 0.5rem;
@@ -96,35 +145,9 @@
 
     .content-container {
 
-        .work-grid-container {
-            display: grid;
-            grid-template-rows: 1fr 2fr;
-            grid-gap: 5px;
-            height: 100%;
-            margin: -3em 0 0 0;
-
-            .work-grid-item {
-                display: flex;
-                align-items: center; 
-                justify-content: center; 
-            }
-
-            .prsa {
-                width: 100%;
-
-                img {
-                    padding: 10px;
-                    width: 30%;
-                }
-            }
-
-            .description {
-                font-weight: 600;
-                font-size: 15px;
-                padding: 5px;
-                display: block;
-            }
-        }
     }
 }
+
+
+
 

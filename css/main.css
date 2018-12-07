@@ -10,17 +10,25 @@ body {
   box-sizing: border-box; }
 
 /******* Main Landing Page *******/
+.hero-background {
+  height: 100vh;
+  background-image: url(../img/bg-img1.jpg);
+  background-size: cover;
+  background-color: #505050;
+  background-blend-mode: multiply;
+  background-attachment: fixed; }
+
 .main {
   height: 90vh;
   background-color: white; }
   .main .content-container {
-    height: 100%;
-    padding: 10em 20em 6em 20em; }
+    height: 100vh;
+    padding: 10em 8em 5em 10em; }
 
 /********* Footer *********/
 footer {
   height: 10vh;
-  padding: 1em 20em 0 20em; }
+  padding: 0 10em 0 10em; }
 
 .social {
   text-decoration: none;
@@ -52,10 +60,11 @@ nav {
   padding: 0.5rem 0;
   opacity: 1;
   text-align: center;
-  top: 0; }
+  top: 0;
+  color: white; }
   nav a {
     text-decoration: none;
-    color: #222222; }
+    color: white; }
   nav .logo {
     padding: 8px 30px 0 30px;
     width: 300px;
@@ -67,7 +76,7 @@ nav {
     font-size: 1.8em; }
 
 .nav-colored {
-  background-color: maroon; }
+  background-color: #505050; }
 
 .nav-height {
   padding: 0; }
@@ -76,8 +85,8 @@ nav {
   color: white; }
   .nav-text button:hover li {
     transform: scale(1.15, 1.15);
-    color: black;
-    box-shadow: 0 3px 0 -2px black; }
+    color: white;
+    box-shadow: 0 3px 0 -2px white; }
 
 nav > ul {
   width: 100%;
@@ -87,7 +96,7 @@ nav > ul {
   list-style: none;
   transition: all 300ms ease-in-out; }
   nav > ul button {
-    color: #222222;
+    color: #505050;
     font-family: 'Open Sans Condensed', sans-serif;
     letter-spacing: 2px;
     position: relative;
@@ -98,8 +107,8 @@ nav > ul {
     border-radius: 10px; }
     nav > ul button:hover li {
       transform: scale(1.15, 1.15);
-      color: maroon;
-      box-shadow: 0 3px 0 -2px maroon; }
+      color: white;
+      box-shadow: 0 3px 0 -2px white; }
     nav > ul button:active li {
       transform: scale(1.15, 1.15);
       color: maroon;
@@ -130,17 +139,25 @@ body {
   box-sizing: border-box; }
 
 /******* Main Landing Page *******/
+.hero-background {
+  height: 100vh;
+  background-image: url(../img/bg-img1.jpg);
+  background-size: cover;
+  background-color: #505050;
+  background-blend-mode: multiply;
+  background-attachment: fixed; }
+
 .main {
   height: 90vh;
   background-color: white; }
   .main .content-container {
-    height: 100%;
-    padding: 10em 20em 6em 20em; }
+    height: 100vh;
+    padding: 10em 8em 5em 10em; }
 
 /********* Footer *********/
 footer {
   height: 10vh;
-  padding: 1em 20em 0 20em; }
+  padding: 0 10em 0 10em; }
 
 .social {
   text-decoration: none;
@@ -164,27 +181,61 @@ footer {
 .gmail {
   background-image: url(../img/gmail.png); }
 
+.hero-background {
+  text-align: center; }
+  .hero-background .container {
+    padding: 10em 0 10em 0; }
+    .hero-background .container .hello {
+      font-family: 'Amatic SC', cursive;
+      text-transform: none;
+      font-size: 3.5em;
+      letter-spacing: 8px;
+      line-height: 1em;
+      color: whitesmoke;
+      text-align: center; }
+    .hero-background .container .name {
+      background-attachment: fixed;
+      font-family: sans-serif;
+      font-size: 70px;
+      font-weight: 900;
+      background-position: center center;
+      background-size: cover;
+      text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.1);
+      -webkit-text-fill-color: transparent;
+      background-image: url(../img/abstract3.jpg);
+      background-position: center center;
+      background-size: cover;
+      -webkit-background-clip: text; }
+    .hero-background .container .title {
+      padding: 0;
+      font-family: 'Kristi', cursive;
+      text-transform: none;
+      font-size: 3.5em;
+      letter-spacing: 8px;
+      color: whitesmoke;
+      text-align: center;
+      margin-top: 0;
+      font-weight: 100; }
+
 /******* Content Container *******/
 /***** About Page Styling ******/
 .content-container .content-container-grid {
   display: grid;
   grid-template-columns: 0.3fr 1fr;
-  grid-gap: 20px;
-  height: 100%;
+  grid-gap: 100px;
   padding: 20px; }
   .content-container .content-container-grid .grid-image {
-    background-image: url(../img/me.jpg);
+    background-image: url(../img/me1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid maroon;
     border-bottom-left-radius: 120px;
     border-top-right-radius: 120px; }
   .content-container .content-container-grid .content-grid-item {
     height: 100%;
-    font-size: 15px; }
+    font-size: 16px; }
     .content-container .content-container-grid .content-grid-item .grid-item {
       padding: 3em 0.5rem;
-      color: #222222; }
+      color: #505050; }
       .content-container .content-container-grid .content-grid-item .grid-item h1 {
         font-size: 36px;
         font-weight: 100;
@@ -218,25 +269,5 @@ footer {
   to {
     border-right-color: transparent; } }
 /***** Work Page Styling ******/
-.main .content-container .work-grid-container {
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-  grid-gap: 5px;
-  height: 100%;
-  margin: -3em 0 0 0; }
-  .main .content-container .work-grid-container .work-grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .main .content-container .work-grid-container .prsa {
-    width: 100%; }
-    .main .content-container .work-grid-container .prsa img {
-      padding: 10px;
-      width: 30%; }
-  .main .content-container .work-grid-container .description {
-    font-weight: 600;
-    font-size: 15px;
-    padding: 5px;
-    display: block; }
 
 /*# sourceMappingURL=main.css.map */

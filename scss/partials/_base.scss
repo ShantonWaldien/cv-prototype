@@ -16,13 +16,22 @@ body {
 
 /******* Main Landing Page *******/
 
+.hero-background {
+    height: 100vh;
+    background-image: url(../img/bg-img1.jpg);
+    background-size: cover;
+    background-color: $tertiary-color;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
 .main {
     height: 90vh;
     background-color: $secondary-color;
 
     .content-container {
-        height: 100%;
-        padding: 10em 20em 6em 20em;
+        height: 100vh;
+        padding: 10em 8em 5em 10em;
     }
 
 }
@@ -31,7 +40,7 @@ body {
 
 footer {
     height: 10vh;
-    padding: 1em 20em 0 20em;
+    padding: 0 10em 0 10em;
 }
 
 .social {
