@@ -57,7 +57,7 @@ nav {
   color: white;
   z-index: 1; }
   nav:hover {
-    box-shadow: 0 5px 40px white; }
+    box-shadow: 0 -8px 40px white; }
   nav a {
     text-decoration: none;
     color: white; }
@@ -136,6 +136,19 @@ nav > ul {
     color: white;
     padding: 10px; }
 
+/***** Buttons ******/
+.button1 {
+  font-weight: 600;
+  padding: 10px;
+  width: 30%;
+  background-color: transparent;
+  border: 3px solid maroon;
+  border-radius: 3px; }
+
+.download {
+  background-color: maroon;
+  color: white; }
+
 html {
   scroll-behavior: smooth;
   margin: 0; }
@@ -202,13 +215,7 @@ footer {
       font-family: sans-serif;
       font-size: 4.2em;
       font-weight: 1000;
-      background-size: cover;
-      text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.1);
-      -webkit-text-fill-color: transparent;
-      background-image: url(../img/cpt.jpg);
-      -webkit-background-clip: text;
-      background-position-y: -170px;
-      background-position-x: -219px; }
+      color: maroon; }
     .hero-background .container .title {
       padding: 0;
       font-family: 'Kristi', cursive;
@@ -235,14 +242,13 @@ footer {
     height: 100%;
     font-size: 16px; }
     .main .content-container-grid .content-grid-item .grid-item {
-      padding: 6em 4em;
+      padding: 6em 7em;
       color: #131414; }
       .main .content-container-grid .content-grid-item .grid-item .title-bg {
         right: 15px;
-        font-family: 'Kristi', cursive;
-        color: rgba(30, 37, 48, 0.07);
-        font-size: 95px;
-        letter-spacing: 10px;
+        color: rgba(30, 37, 48, 0.13);
+        font-size: 50px;
+        letter-spacing: 5px;
         line-height: 0.7;
         position: absolute;
         -moz-transform: translateY(-50%);
@@ -253,10 +259,10 @@ footer {
         font-size: 36px;
         font-weight: 100;
         margin: 0; }
-      .main .content-container-grid .content-grid-item .grid-item .middle {
-        margin-top: 30px; }
       .main .content-container-grid .content-grid-item .grid-item p {
         font-weight: 600; }
+      .main .content-container-grid .content-grid-item .grid-item .bottom {
+        margin-bottom: 50px; }
       .main .content-container-grid .content-grid-item .grid-item .line {
         font-weight: 600;
         letter-spacing: 3px;

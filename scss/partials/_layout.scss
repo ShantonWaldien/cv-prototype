@@ -26,13 +26,14 @@
             font-family: sans-serif;
             font-size: 4.2em;
             font-weight: 1000;
-            background-size: cover;
-            text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.1);
-            -webkit-text-fill-color: transparent;
-            background-image: url(../img/cpt.jpg);
-            -webkit-background-clip: text;
-            background-position-y: -170px;
-            background-position-x: -219px;
+            color: $primary-color;
+            // background-size: cover;
+            // text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.1);
+            // -webkit-text-fill-color: transparent;
+            // background-image: url(../img/cpt.jpg);
+            // -webkit-background-clip: text;
+            // background-position-y: -170px;
+            // background-position-x: -219px;
         }
 
         .title {
@@ -75,15 +76,14 @@
             font-size: 16px;
             
             .grid-item {
-                padding: 6em 4em;
+                padding: 6em 7em;
                 color: $tertiary-color;
 
                 .title-bg {
                     right: 15px;
-                    font-family: 'Kristi', cursive;
-                    color: rgba(30, 37, 48, 0.07);
-                    font-size: 95px;
-                    letter-spacing: 10px;
+                    color: rgba(30, 37, 48, 0.13);
+                    font-size: 50px;
+                    letter-spacing: 5px;
                     line-height: 0.7;
                     position: absolute;
                     
@@ -100,12 +100,12 @@
                     margin: 0;
                 }
 
-                .middle {
-                    margin-top: 30px; 
-                }
-
                 p {
                     font-weight: 600;
+                }
+
+                .bottom {
+                    margin-bottom: 50px;
                 }
 
                 .line {
