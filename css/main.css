@@ -18,13 +18,6 @@ body {
   background-blend-mode: multiply;
   background-attachment: fixed; }
 
-.main {
-  height: 90vh;
-  background-color: white; }
-  .main .content-container {
-    height: 70vh;
-    padding: 4em 8em 5em 10em; }
-
 /********* Footer *********/
 footer {
   height: 10vh;
@@ -61,7 +54,11 @@ nav {
   opacity: 1;
   text-align: center;
   top: 0;
-  color: white; }
+  color: white;
+  z-index: 1; }
+  nav:hover {
+    color: grey;
+    box-shadow: 0 5px 40px white; }
   nav a {
     text-decoration: none;
     color: white; }
@@ -76,9 +73,7 @@ nav {
     font-size: 1.8em; }
 
 .nav-colored {
-  background-color: #505050; }
-
-.nav-height {
+  background-color: #505050;
   padding: 0; }
 
 .nav-text button {
@@ -121,12 +116,6 @@ nav > ul {
     padding: 0 auto;
     transition: all 300ms ease-in-out; }
 
-/****** Main Container For Content ******/
-.main-container {
-  padding-top: 240px;
-  padding: 0 50px 0 50px;
-  height: 200px; }
-
 html {
   scroll-behavior: smooth;
   margin: 0; }
@@ -146,13 +135,6 @@ body {
   background-color: #505050;
   background-blend-mode: multiply;
   background-attachment: fixed; }
-
-.main {
-  height: 90vh;
-  background-color: white; }
-  .main .content-container {
-    height: 70vh;
-    padding: 4em 8em 5em 10em; }
 
 /********* Footer *********/
 footer {
@@ -192,20 +174,21 @@ footer {
       letter-spacing: 8px;
       line-height: 1em;
       color: whitesmoke;
-      text-align: center; }
+      text-align: center;
+      z-index: 2; }
     .hero-background .container .name {
-      background-attachment: fixed;
+      background-attachment: scroll;
+      letter-spacing: -5px;
       font-family: sans-serif;
-      font-size: 70px;
-      font-weight: 900;
-      background-position: center center;
+      font-size: 115px;
+      font-weight: 1000;
       background-size: cover;
       text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.1);
       -webkit-text-fill-color: transparent;
-      background-image: url(../img/abstract3.jpg);
-      background-position: center center;
-      background-size: cover;
-      -webkit-background-clip: text; }
+      background-image: url(../img/cpt.jpg);
+      -webkit-background-clip: text;
+      background-position-y: -271px;
+      background-position-x: -219px; }
     .hero-background .container .title {
       padding: 0;
       font-family: 'Kristi', cursive;
@@ -219,45 +202,49 @@ footer {
 
 /******* Content Container *******/
 /***** About Page Styling ******/
-.content-container .content-container-grid {
-  display: grid;
-  grid-template-columns: 0.3fr 1fr;
-  grid-gap: 100px;
-  padding: 20px; }
-  .content-container .content-container-grid .grid-image {
-    background-image: url(../img/me1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom-left-radius: 120px;
-    border-top-right-radius: 120px; }
-  .content-container .content-container-grid .content-grid-item {
-    height: 100%;
-    font-size: 16px; }
-    .content-container .content-container-grid .content-grid-item .grid-item {
-      padding: 3em 0.5rem;
-      color: #505050; }
-      .content-container .content-container-grid .content-grid-item .grid-item h1 {
-        font-size: 36px;
-        font-weight: 100;
-        margin: 0; }
-      .content-container .content-container-grid .content-grid-item .grid-item .middle {
-        margin-top: 30px; }
-      .content-container .content-container-grid .content-grid-item .grid-item p {
-        font-weight: 600; }
-      .content-container .content-container-grid .content-grid-item .grid-item .line {
-        font-weight: 600;
-        letter-spacing: 3px;
-        padding: 0;
-        margin: 0;
-        color: maroon;
-        width: 5.3em;
-        border-right: 2px solid black;
-        font-size: 1.5em;
-        white-space: nowrap;
-        overflow: hidden;
-        transform: translateY(-50%); }
-      .content-container .content-container-grid .content-grid-item .grid-item .anim-typewriter {
-        animation: typewriter 2s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal; }
+.main {
+  padding: 5em 8em; }
+  .main .content-container-grid {
+    height: 50vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-gap: 100px;
+    padding: 20px; }
+    .main .content-container-grid .grid-image {
+      background-image: url(../img/me1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-bottom-left-radius: 120px;
+      border-top-right-radius: 120px; }
+    .main .content-container-grid .content-grid-item {
+      height: 100%;
+      font-size: 16px; }
+      .main .content-container-grid .content-grid-item .grid-item {
+        padding: 3em 0.5rem;
+        color: #505050; }
+        .main .content-container-grid .content-grid-item .grid-item h1 {
+          font-size: 36px;
+          font-weight: 100;
+          margin: 0; }
+        .main .content-container-grid .content-grid-item .grid-item .middle {
+          margin-top: 30px; }
+        .main .content-container-grid .content-grid-item .grid-item p {
+          font-weight: 600; }
+        .main .content-container-grid .content-grid-item .grid-item .line {
+          font-weight: 600;
+          letter-spacing: 3px;
+          padding: 0;
+          margin: 0;
+          color: maroon;
+          width: 5.3em;
+          border-right: 2px solid black;
+          font-size: 1.5em;
+          white-space: nowrap;
+          overflow: hidden;
+          transform: translateY(-50%); }
+        .main .content-container-grid .content-grid-item .grid-item .anim-typewriter {
+          animation: typewriter 2s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal; }
 @keyframes typewriter {
   from {
     width: 0; }
@@ -268,6 +255,9 @@ footer {
     border-right-color: black; }
   to {
     border-right-color: transparent; } }
-/***** Work Page Styling ******/
+/****** Work Section ******/
+.work-experience {
+  height: 100vh;
+  background-color: grey; }
 
 /*# sourceMappingURL=main.css.map */
