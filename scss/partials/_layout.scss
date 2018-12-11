@@ -7,8 +7,7 @@
     text-align: center;
 
     .container {
-        padding: 12em 0 10em 0;
-
+        padding: 10em 0 10em 0;
 
         .hello {
             font-family: 'Amatic SC', cursive;
@@ -76,8 +75,24 @@
             font-size: 16px;
             
             .grid-item {
-                padding: 5em 4em;
+                padding: 6em 4em;
                 color: $tertiary-color;
+
+                .title-bg {
+                    right: 15px;
+                    font-family: 'Kristi', cursive;
+                    color: rgba(30, 37, 48, 0.07);
+                    font-size: 95px;
+                    letter-spacing: 10px;
+                    line-height: 0.7;
+                    position: absolute;
+                    
+                    
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    -o-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                }
 
                 h1 {
                     font-size: 36px;
@@ -142,25 +157,10 @@
 
 /****** Work Section ******/
 
-.work-experience {
+.skills-container {
     height: 100vh;
-    background-color: grey;
     text-align: center;
-    padding: 5em 8em;
-
-
-
-    .work-grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: red;
-        grid-gap: 20px;
-
-        .work-grid-item{
-            background-color: white;
-            padding: 20px;
-        }
-    }
+    background-color: $tertiary-color;
 }
 
 

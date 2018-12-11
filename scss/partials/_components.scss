@@ -111,14 +111,14 @@ nav > ul {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: $tertiary-color;
+    background-color: $textcolor;
     color: white;
     cursor: pointer;
     padding: 10px;
     border-radius: 4px;
 
     #myBtn:hover {
-        background-color: #555;
+        background-color: $textcolor;
     }
 
     .fa-angle-double-up {
