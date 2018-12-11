@@ -94,7 +94,7 @@ nav > ul {
     font-family: 'Open Sans Condensed', sans-serif;
     letter-spacing: 2px;
     position: relative;
-    font-size: 1.4rem;
+    font-size: 0.99rem;
     margin: 15px;
     background-color: #eeeeee00;
     border: none;
@@ -114,6 +114,27 @@ nav > ul {
     display: inline-table;
     padding: 0 auto;
     transition: all 300ms ease-in-out; }
+
+/***** Back To top Button ******/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #505050;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px; }
+  #myBtn #myBtn:hover {
+    background-color: #555; }
+  #myBtn .fa-angle-double-up {
+    color: white;
+    padding: 10px; }
 
 html {
   scroll-behavior: smooth;
@@ -165,11 +186,11 @@ footer {
 .hero-background {
   text-align: center; }
   .hero-background .container {
-    padding: 10em 0 10em 0; }
+    padding: 12em 0 10em 0; }
     .hero-background .container .hello {
       font-family: 'Amatic SC', cursive;
       text-transform: none;
-      font-size: 3.5em;
+      font-size: 2.5em;
       letter-spacing: 8px;
       line-height: 1em;
       color: whitesmoke;
@@ -177,16 +198,16 @@ footer {
       z-index: 2; }
     .hero-background .container .name {
       background-attachment: scroll;
-      letter-spacing: -5px;
+      letter-spacing: 0px;
       font-family: sans-serif;
-      font-size: 5.625em;
+      font-size: 4.2em;
       font-weight: 1000;
       background-size: cover;
       text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.1);
       -webkit-text-fill-color: transparent;
       background-image: url(../img/cpt.jpg);
       -webkit-background-clip: text;
-      background-position-y: -207px;
+      background-position-y: -170px;
       background-position-x: -219px; }
     .hero-background .container .title {
       padding: 0;
@@ -201,49 +222,43 @@ footer {
 
 /******* Content Container *******/
 /***** About Page Styling ******/
-.main {
-  padding: 5em 8em; }
-  .main .content-container-grid {
+.main .content-container-grid {
+  height: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .main .content-container-grid .grid-image {
+    background-image: url(../img/me1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .main .content-container-grid .content-grid-item {
     height: 100%;
-    background-color: white;
-    display: grid;
-    grid-template-columns: 0.3fr 1fr;
-    grid-gap: 100px;
-    padding: 20px; }
-    .main .content-container-grid .grid-image {
-      background-image: url(../img/me1.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      border-bottom-left-radius: 120px;
-      border-top-right-radius: 120px; }
-    .main .content-container-grid .content-grid-item {
-      height: 100%;
-      font-size: 16px; }
-      .main .content-container-grid .content-grid-item .grid-item {
-        padding: 3em 0.5rem;
-        color: #505050; }
-        .main .content-container-grid .content-grid-item .grid-item h1 {
-          font-size: 36px;
-          font-weight: 100;
-          margin: 0; }
-        .main .content-container-grid .content-grid-item .grid-item .middle {
-          margin-top: 30px; }
-        .main .content-container-grid .content-grid-item .grid-item p {
-          font-weight: 600; }
-        .main .content-container-grid .content-grid-item .grid-item .line {
-          font-weight: 600;
-          letter-spacing: 3px;
-          padding: 0;
-          margin: 0;
-          color: maroon;
-          width: 5.3em;
-          border-right: 2px solid black;
-          font-size: 1.5em;
-          white-space: nowrap;
-          overflow: hidden;
-          transform: translateY(-50%); }
-        .main .content-container-grid .content-grid-item .grid-item .anim-typewriter {
-          animation: typewriter 2s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal; }
+    font-size: 16px; }
+    .main .content-container-grid .content-grid-item .grid-item {
+      padding: 5em 4em;
+      color: #505050; }
+      .main .content-container-grid .content-grid-item .grid-item h1 {
+        font-size: 36px;
+        font-weight: 100;
+        margin: 0; }
+      .main .content-container-grid .content-grid-item .grid-item .middle {
+        margin-top: 30px; }
+      .main .content-container-grid .content-grid-item .grid-item p {
+        font-weight: 600; }
+      .main .content-container-grid .content-grid-item .grid-item .line {
+        font-weight: 600;
+        letter-spacing: 3px;
+        padding: 0;
+        margin: 0;
+        color: maroon;
+        width: 5.3em;
+        border-right: 2px solid black;
+        font-size: 1.5em;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%); }
+      .main .content-container-grid .content-grid-item .grid-item .anim-typewriter {
+        animation: typewriter 2s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal; }
 @keyframes typewriter {
   from {
     width: 0; }
@@ -257,6 +272,16 @@ footer {
 /****** Work Section ******/
 .work-experience {
   height: 100vh;
-  background-color: grey; }
+  background-color: grey;
+  text-align: center;
+  padding: 5em 8em; }
+  .work-experience .work-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: red;
+    grid-gap: 20px; }
+    .work-experience .work-grid-container .work-grid-item {
+      background-color: white;
+      padding: 20px; }
 
 /*# sourceMappingURL=main.css.map */

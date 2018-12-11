@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Covered+By+Your+Grace|Patrick+Hand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kristi" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 <body>
 
@@ -26,7 +28,7 @@
             <li>|</li>
             <button class="nav-item"><a href="#about"><li>About</li></a></button>
             <li>|</li>
-            <button class="nav-item"><a href="work.html"><li>Work</li></a></button>
+            <button class="nav-item"><a href="#work"><li>Work</li></a></button>
             <li>|</li>
             <button class="nav-item"><a href="education.html"><li>Education</li></a></button>
             <li>|</li>
@@ -37,6 +39,10 @@
         </ul>
             
     </nav>
+
+    <!-- Back to top button -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
 
     <div class="hero-background" id="home">
 
@@ -55,45 +61,58 @@
     <div class="main" id="about">
 
             
-            <div class="content-container-grid">
+        <div class="content-container-grid">
 
-                <!-- Profile Image -->
+            <!-- Profile Image -->
 
-                <div class="content-grid-item grid-image"> </div>
+            <div class="content-grid-item grid-image"></div>
 
-                <div class="content-grid-item">
+            <div class="content-grid-item">
 
-                    <div class="bio-grid-container" >
+                <div class="bio-grid-container" >
 
-                        <div class="grid-item">
+                    <div class="grid-item">
 
-                            <!-- Introduction Content -->
+                        <!-- Introduction Content -->
 
-                            <h1 class="line anim-typewriter">Hi, Im Shanton.</h1>  
+                        <h1 class="line anim-typewriter">Hi, Im Shanton.</h1>  
 
-                            <h1 class="middle">What I Do</h1>
+                        <h1 class="middle">What I Do</h1>
                     
-                            <p class="intro">I am a proactive tech enthusiast with a passion for innovation and fresh ideas. I'm constanly willing to learn to gain knowledge and wisdom of unexplored territory.</p>
+                        <p class="intro">I am a proactive tech enthusiast with a passion for innovation and fresh ideas. I'm constanly willing to learn to gain knowledge and wisdom of unexplored territory.</p>
 
-                            <h1>My Objective</h1>
+                        <h1>My Objective</h1>
                     
-                            <p>My goal is to be able to use my coding skills in a way that is useful, efficient and effective, to improve my design skills and coding aptitude and to build on my knowledge of the industry, while building useful products.</p>
+                        <p>My goal is to be able to use my coding skills in a way that is useful, efficient and effective, to improve my design skills and coding aptitude and to build on my knowledge of the industry, while building useful products.</p>
                     
-                        </div>  
+                    </div>  
                     
-                    </div>
-
                 </div>
-                
-            </div>
 
-     
+            </div>
+                
+        </div>
     
     </div>
 
     <!-- Work Section Starts here -->
 
-    <div class="work-experience">
+    <div class="work-experience" id="work">
+
+        <h1>Work</h1>
+
+        <!-- Work Grid Container -->
+
+        <div class="work-grid-container">
+
+            <div class="work-grid-item prsa"><img src="img/prsa.png" alt=""></div>
+            <div class="work-grid-item">
+                <p>Duration: 12 Months</p>
+
+                <p>I completed </p>
+            </div>
+
+        </div>
 
     </div>
 

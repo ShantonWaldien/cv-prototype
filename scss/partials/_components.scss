@@ -70,7 +70,7 @@ nav > ul {
         font-family: 'Open Sans Condensed', sans-serif;
         letter-spacing: 2px;
         position: relative;
-        font-size: 1.4rem;
+        font-size: 0.99rem;
         margin: 15px;
         background-color: #eeeeee00;
         border: none;
@@ -98,5 +98,31 @@ nav > ul {
         display: inline-table;
         padding: 0 auto;
         transition: all 300ms ease-in-out;
+    }
+}
+
+/***** Back To top Button ******/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: $tertiary-color;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+
+    #myBtn:hover {
+        background-color: #555;
+    }
+
+    .fa-angle-double-up {
+        color: $secondary-color;
+        padding: 10px;
     }
 }

@@ -6,21 +6,14 @@
 .hero-background {
     text-align: center;
 
-    // .triangles {
-    //     background-image: url(../img/triangles.png);
-    //     height: 100vh;
-    //     opacity: 0.2;
-    //     background-size: cover;
-    // }
-
     .container {
-        padding: 10em 0 10em 0;
+        padding: 12em 0 10em 0;
 
 
         .hello {
             font-family: 'Amatic SC', cursive;
             text-transform: none;
-            font-size: 3.5em;
+            font-size: 2.5em;
             letter-spacing: 8px;
             line-height: 1em;
             color: whitesmoke;
@@ -30,16 +23,16 @@
 
         .name {
             background-attachment: scroll;
-            letter-spacing: -5px;
+            letter-spacing: 0px;
             font-family: sans-serif;
-            font-size: 5.625em;
+            font-size: 4.2em;
             font-weight: 1000;
             background-size: cover;
             text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.1);
             -webkit-text-fill-color: transparent;
             background-image: url(../img/cpt.jpg);
             -webkit-background-clip: text;
-            background-position-y: -207px;
+            background-position-y: -170px;
             background-position-x: -219px;
         }
 
@@ -65,23 +58,17 @@
 /***** About Page Styling ******/
 
 .main {
-    padding: 5em 8em;
 
     .content-container-grid {
         height: 100%;
         background-color: $secondary-color;
         display: grid;
-        grid-template-columns: 0.3fr 1fr;
-        grid-gap: 100px;
-        padding: 20px;
+        grid-template-columns: 1fr 1fr;
 
         .grid-image {
             background-image: url(../img/me1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            border-bottom-left-radius: 120px;
-            border-top-right-radius: 120px;
-            
         }
 
         .content-grid-item {
@@ -89,7 +76,7 @@
             font-size: 16px;
             
             .grid-item {
-                padding: 3em 0.5rem;
+                padding: 5em 4em;
                 color: $tertiary-color;
 
                 h1 {
@@ -143,7 +130,6 @@
                     }
                 }
                 
-               
             }
         }
                 
@@ -159,6 +145,22 @@
 .work-experience {
     height: 100vh;
     background-color: grey;
+    text-align: center;
+    padding: 5em 8em;
+
+
+
+    .work-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: red;
+        grid-gap: 20px;
+
+        .work-grid-item{
+            background-color: white;
+            padding: 20px;
+        }
+    }
 }
 
 
