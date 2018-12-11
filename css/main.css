@@ -47,7 +47,7 @@ footer {
 
 /******** Navigation Bar styling starts here ******/
 nav {
-  transition: all 300ms ease-in-out;
+  transition: all 400ms ease-in-out;
   position: fixed;
   width: 100%;
   padding: 0.5rem 0;
@@ -125,13 +125,11 @@ nav > ul {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #505050;
+  background-color: maroon;
   color: white;
   cursor: pointer;
   padding: 10px;
   border-radius: 4px; }
-  #myBtn #myBtn:hover {
-    background-color: #505050; }
   #myBtn .fa-angle-double-up {
     color: white;
     padding: 10px; }
@@ -140,7 +138,7 @@ nav > ul {
 .button1 {
   font-weight: 600;
   padding: 10px;
-  width: 30%;
+  width: 35%;
   background-color: transparent;
   border: 3px solid maroon;
   border-radius: 3px; }
@@ -199,7 +197,7 @@ footer {
 .hero-background {
   text-align: center; }
   .hero-background .container {
-    padding: 10em 0 10em 0; }
+    padding: 12em 0 10em 0; }
     .hero-background .container .hello {
       font-family: 'Amatic SC', cursive;
       text-transform: none;
