@@ -57,7 +57,6 @@ nav {
   color: white;
   z-index: 1; }
   nav:hover {
-    color: grey;
     box-shadow: 0 5px 40px white; }
   nav a {
     text-decoration: none;
@@ -180,14 +179,14 @@ footer {
       background-attachment: scroll;
       letter-spacing: -5px;
       font-family: sans-serif;
-      font-size: 115px;
+      font-size: 5.625em;
       font-weight: 1000;
       background-size: cover;
       text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.1);
       -webkit-text-fill-color: transparent;
       background-image: url(../img/cpt.jpg);
       -webkit-background-clip: text;
-      background-position-y: -271px;
+      background-position-y: -207px;
       background-position-x: -219px; }
     .hero-background .container .title {
       padding: 0;
@@ -205,7 +204,7 @@ footer {
 .main {
   padding: 5em 8em; }
   .main .content-container-grid {
-    height: 50vh;
+    height: 100%;
     background-color: white;
     display: grid;
     grid-template-columns: 0.3fr 1fr;
