@@ -10,7 +10,7 @@
         padding: 12em 0 10em 0;
 
         .hello {
-            font-family: 'Oswald', sans-serif;
+            font-family: 'Amatic SC', cursive;
             text-transform: none;
             font-size: 2.5em;
             letter-spacing: 8px;
@@ -141,12 +141,45 @@
                 
     }
 }
+
+/****** Tools Section ******/
+
+.tools {
+    height: auto;
+    text-align: center;
+    padding: 45px 200px;
+    background-color: $tertiary-color;
+
+    h1 {
+        letter-spacing: 5px;
+        color: $secondary-color;
+    }
+
+    .tool-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+        .tool-grid-item {
+            border: 1px solid $textcolor;
+            padding: 0 150px;
+            color: $textcolor;
+
+            h1 {
+                padding: 0 0 10px 0;
+                font-size: 1.5em;
+                border-bottom: 1.5px solid $primary-color;
+            }
+        }
+    }
+}
     
 
     
 
 
 /****** Skills Section ******/
+
 .skills-section {
     height: auto;
     text-align: center;
@@ -161,44 +194,18 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 20px;
+        border: 1.5px solid $primary-color;
 
         .skill-grid-item {
+            padding: 20px;
+
             img {
                 width: 50%;
             }
         }
     }
 }
-/****** Portfolio Section ******/
 
-.portfolio {
-    height: auto;
-    text-align: center;
-    padding: 45px 200px;
-    background-color: $tertiary-color;
-
-    h1 {
-        letter-spacing: 5px;
-    }
-
-    .tool-grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-
-        .tool-grid-item {
-            border: 2px solid $textcolor;
-            padding: 0 150px;
-            color: $textcolor;
-
-            h1 {
-                padding: 0 0 10px 0;
-                font-size: 1.5em;
-                border-bottom: 1.5px solid $primary-color;
-            }
-        }
-    }
-}
 
 
 

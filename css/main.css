@@ -209,7 +209,7 @@ footer {
   .hero-background .container {
     padding: 12em 0 10em 0; }
     .hero-background .container .hello {
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Amatic SC', cursive;
       text-transform: none;
       font-size: 2.5em;
       letter-spacing: 8px;
@@ -295,6 +295,28 @@ footer {
     border-right-color: black; }
   to {
     border-right-color: transparent; } }
+/****** Tools Section ******/
+.tools {
+  height: auto;
+  text-align: center;
+  padding: 45px 200px;
+  background-color: #131414; }
+  .tools h1 {
+    letter-spacing: 5px;
+    color: white; }
+  .tools .tool-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; }
+    .tools .tool-grid-container .tool-grid-item {
+      border: 1px solid #505050;
+      padding: 0 150px;
+      color: #505050; }
+      .tools .tool-grid-container .tool-grid-item h1 {
+        padding: 0 0 10px 0;
+        font-size: 1.5em;
+        border-bottom: 1.5px solid maroon; }
+
 /****** Skills Section ******/
 .skills-section {
   height: auto;
@@ -306,29 +328,11 @@ footer {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 20px; }
-    .skills-section .skills-grid-container .skill-grid-item img {
-      width: 50%; }
-
-/****** Portfolio Section ******/
-.portfolio {
-  height: auto;
-  text-align: center;
-  padding: 45px 200px;
-  background-color: #131414; }
-  .portfolio h1 {
-    letter-spacing: 5px; }
-  .portfolio .tool-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px; }
-    .portfolio .tool-grid-container .tool-grid-item {
-      border: 2px solid #505050;
-      padding: 0 150px;
-      color: #505050; }
-      .portfolio .tool-grid-container .tool-grid-item h1 {
-        padding: 0 0 10px 0;
-        font-size: 1.5em;
-        border-bottom: 1.5px solid maroon; }
+    grid-gap: 20px;
+    border: 1.5px solid maroon; }
+    .skills-section .skills-grid-container .skill-grid-item {
+      padding: 20px; }
+      .skills-section .skills-grid-container .skill-grid-item img {
+        width: 50%; }
 
 /*# sourceMappingURL=main.css.map */
