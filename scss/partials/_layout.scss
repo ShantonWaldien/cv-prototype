@@ -187,7 +187,15 @@
         grid-gap: 20px;
 
         .tool-grid-item {
-            background-color: red;
+            border: 2px solid $textcolor;
+            padding: 0 150px;
+            color: $textcolor;
+
+            h1 {
+                padding: 0 0 10px 0;
+                font-size: 1.5em;
+                border-bottom: 1.5px solid $primary-color;
+            }
         }
     }
 }
