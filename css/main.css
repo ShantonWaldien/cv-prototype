@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Open Sans Condensed', sans-serif; }
+  font-family: 'Oswald', sans-serif; }
 
 * {
   box-sizing: border-box; }
@@ -145,7 +145,17 @@ nav > ul {
 
 .download {
   background-color: maroon;
-  color: white; }
+  color: white;
+  transition: all 400ms ease-in-out; }
+  .download:hover {
+    background: transparent;
+    color: maroon; }
+
+.hire {
+  transition: all 400ms ease-in-out; }
+  .hire:hover {
+    background: maroon;
+    color: white; }
 
 html {
   scroll-behavior: smooth;
@@ -153,7 +163,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Open Sans Condensed', sans-serif; }
+  font-family: 'Oswald', sans-serif; }
 
 * {
   box-sizing: border-box; }
@@ -199,7 +209,7 @@ footer {
   .hero-background .container {
     padding: 12em 0 10em 0; }
     .hero-background .container .hello {
-      font-family: 'Amatic SC', cursive;
+      font-family: 'Oswald', sans-serif;
       text-transform: none;
       font-size: 2.5em;
       letter-spacing: 8px;
@@ -209,8 +219,8 @@ footer {
       z-index: 2; }
     .hero-background .container .name {
       background-attachment: scroll;
-      letter-spacing: 0px;
-      font-family: sans-serif;
+      letter-spacing: 20px;
+      font-family: 'Oswald', sans-serif;
       font-size: 4.2em;
       font-weight: 1000;
       color: maroon; }
@@ -235,12 +245,13 @@ footer {
   .main .content-container-grid .grid-image {
     background-image: url(../img/me1.jpg);
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    overflow: hidden; }
   .main .content-container-grid .content-grid-item {
     height: 100%;
     font-size: 16px; }
     .main .content-container-grid .content-grid-item .grid-item {
-      padding: 6em 7em;
+      padding: 6em 4em;
       color: #131414; }
       .main .content-container-grid .content-grid-item .grid-item .title-bg {
         right: 15px;
@@ -256,9 +267,8 @@ footer {
       .main .content-container-grid .content-grid-item .grid-item h1 {
         font-size: 36px;
         font-weight: 100;
-        margin: 0; }
-      .main .content-container-grid .content-grid-item .grid-item p {
-        font-weight: 600; }
+        margin: 0;
+        color: #505050; }
       .main .content-container-grid .content-grid-item .grid-item .bottom {
         margin-bottom: 50px; }
       .main .content-container-grid .content-grid-item .grid-item .line {
@@ -286,19 +296,33 @@ footer {
   to {
     border-right-color: transparent; } }
 /****** Skills Section ******/
-.skills-grid-container {
+.skills-section {
   height: auto;
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding: 100px 200px;
-  grid-gap: 20px; }
-  .skills-grid-container .skill-grid-item img {
-    width: 100%; }
+  padding: 45px 200px; }
+  .skills-section h1 {
+    letter-spacing: 5px; }
+  .skills-section .skills-grid-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px; }
+    .skills-section .skills-grid-container .skill-grid-item img {
+      width: 50%; }
 
 /****** Portfolio Section ******/
 .portfolio {
-  height: 100vh;
+  height: auto;
+  text-align: center;
+  padding: 45px 200px;
   background-color: #131414; }
+  .portfolio h1 {
+    letter-spacing: 5px; }
+  .portfolio .tool-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; }
+    .portfolio .tool-grid-container .tool-grid-item {
+      background-color: red; }
 
 /*# sourceMappingURL=main.css.map */

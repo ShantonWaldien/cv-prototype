@@ -137,4 +137,18 @@ nav > ul {
 .download {
     background-color: $primary-color;
     color: $secondary-color;
+    transition: all 400ms ease-in-out;
+
+    &:hover {
+        background: transparent;
+        color: $primary-color;
+    }
+}
+
+.hire {
+    transition: all 400ms ease-in-out;
+    &:hover{
+        background: $primary-color;
+        color: $secondary-color;
+    }
 }

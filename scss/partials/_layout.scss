@@ -10,7 +10,7 @@
         padding: 12em 0 10em 0;
 
         .hello {
-            font-family: 'Amatic SC', cursive;
+            font-family: 'Oswald', sans-serif;
             text-transform: none;
             font-size: 2.5em;
             letter-spacing: 8px;
@@ -22,18 +22,11 @@
 
         .name {
             background-attachment: scroll;
-            letter-spacing: 0px;
-            font-family: sans-serif;
+            letter-spacing: 20px;
+            font-family: 'Oswald', sans-serif;
             font-size: 4.2em;
             font-weight: 1000;
             color: $primary-color;
-            // background-size: cover;
-            // text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.1);
-            // -webkit-text-fill-color: transparent;
-            // background-image: url(../img/cpt.jpg);
-            // -webkit-background-clip: text;
-            // background-position-y: -170px;
-            // background-position-x: -219px;
         }
 
         .title {
@@ -69,6 +62,7 @@
             background-image: url(../img/me1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            overflow: hidden;
         }
 
         .content-grid-item {
@@ -76,7 +70,7 @@
             font-size: 16px;
             
             .grid-item {
-                padding: 6em 7em;
+                padding: 6em 4em;
                 color: $tertiary-color;
 
                 .title-bg {
@@ -98,10 +92,7 @@
                     font-size: 36px;
                     font-weight: 100;
                     margin: 0;
-                }
-
-                p {
-                    font-weight: 600;
+                    color: $textcolor;
                 }
 
                 .bottom {
@@ -156,27 +147,49 @@
 
 
 /****** Skills Section ******/
-
-.skills-grid-container {
+.skills-section {
     height: auto;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 100px 200px;
-    grid-gap: 20px;
+    padding: 45px 200px;
 
-    .skill-grid-item {
-        img {
-            width: 100%;
+    h1 {
+        letter-spacing: 5px;
+    }
+
+    .skills-grid-container {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+
+        .skill-grid-item {
+            img {
+                width: 50%;
+            }
         }
     }
 }
-
 /****** Portfolio Section ******/
 
 .portfolio {
-    height: 100vh;
+    height: auto;
+    text-align: center;
+    padding: 45px 200px;
     background-color: $tertiary-color;
+
+    h1 {
+        letter-spacing: 5px;
+    }
+
+    .tool-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+
+        .tool-grid-item {
+            background-color: red;
+        }
+    }
 }
 
 
