@@ -285,10 +285,20 @@ footer {
     border-right-color: black; }
   to {
     border-right-color: transparent; } }
-/****** Work Section ******/
-.skills-container {
-  height: 100vh;
+/****** Skills Section ******/
+.skills-grid-container {
+  height: auto;
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 100px 200px;
+  grid-gap: 20px; }
+  .skills-grid-container .skill-grid-item img {
+    width: 100%; }
+
+/****** Portfolio Section ******/
+.portfolio {
+  height: 100vh;
   background-color: #131414; }
 
 /*# sourceMappingURL=main.css.map */

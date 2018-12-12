@@ -155,13 +155,30 @@
     
 
 
-/****** Work Section ******/
+/****** Skills Section ******/
 
-.skills-container {
-    height: 100vh;
+.skills-grid-container {
+    height: auto;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 100px 200px;
+    grid-gap: 20px;
+
+    .skill-grid-item {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/****** Portfolio Section ******/
+
+.portfolio {
+    height: 100vh;
     background-color: $tertiary-color;
 }
+
 
 
 
