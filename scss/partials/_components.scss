@@ -132,11 +132,6 @@ nav > ul {
     background-color: transparent;
     border: 3px solid $primary-color;
     border-radius: 3px;
-
-    a {
-        text-decoration: none;
-        color: $primary-color
-    }
 }
 
 
@@ -154,14 +149,12 @@ nav > ul {
 
 .hire {
     transition: all 400ms ease-in-out;
-    color: $secondary-color;
+    color: $primary-color;
     
     &:hover{
         background: $primary-color;
         color: $secondary-color;
 
-        a {
-            color: $secondary-color;
-        }
+        
     }
 }

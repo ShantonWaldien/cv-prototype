@@ -148,9 +148,6 @@ nav > ul {
   background-color: transparent;
   border: 3px solid maroon;
   border-radius: 3px; }
-  .button1 a {
-    text-decoration: none;
-    color: maroon; }
 
 .download {
   background-color: maroon;
@@ -162,12 +159,10 @@ nav > ul {
 
 .hire {
   transition: all 400ms ease-in-out;
-  color: white; }
+  color: maroon; }
   .hire:hover {
     background: maroon;
     color: white; }
-    .hire:hover a {
-      color: white; }
 
 html {
   scroll-behavior: smooth;
