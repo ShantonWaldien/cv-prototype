@@ -20,30 +20,36 @@ body {
 
 /********* Footer *********/
 footer {
-  height: 10vh;
-  padding: 0 10em 0 10em; }
-
-.social {
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: all 300ms ease-in-out; }
-  .social:hover {
-    transform: scale(1.15, 1.15); }
-
-.github {
-  background-image: url(../img/github.png); }
-
-.linkedin {
-  background-image: url(../img/linkedin.png); }
-
-.gmail {
-  background-image: url(../img/gmail.png); }
+  height: 35vh;
+  background-color: #131414;
+  padding: 5em 25em 5em 25em;
+  text-align: center; }
+  footer .social button {
+    background-color: #eeeeee00;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out; }
+    footer .social button:hover {
+      transform: scale(1.55, 1.55); }
+    footer .social button img {
+      width: 30px; }
+  footer .signature {
+    max-width: 300px;
+    padding-top: 10px; }
+  footer .contact {
+    margin: 20px 0 10px 0; }
+    footer .contact .b-right {
+      border-right: 1px solid maroon;
+      padding-right: 20px; }
+    footer .contact h2 {
+      letter-spacing: 3px;
+      color: #505050;
+      font-weight: 100;
+      display: inline;
+      padding-left: 20px; }
+    footer .contact img {
+      width: 30px;
+      display: inline; }
 
 /******** Navigation Bar styling starts here ******/
 nav {
@@ -152,7 +158,8 @@ nav > ul {
     color: maroon; }
 
 .hire {
-  transition: all 400ms ease-in-out; }
+  transition: all 400ms ease-in-out;
+  color: maroon; }
   .hire:hover {
     background: maroon;
     color: white; }
@@ -179,30 +186,36 @@ body {
 
 /********* Footer *********/
 footer {
-  height: 10vh;
-  padding: 0 10em 0 10em; }
-
-.social {
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: all 300ms ease-in-out; }
-  .social:hover {
-    transform: scale(1.15, 1.15); }
-
-.github {
-  background-image: url(../img/github.png); }
-
-.linkedin {
-  background-image: url(../img/linkedin.png); }
-
-.gmail {
-  background-image: url(../img/gmail.png); }
+  height: 35vh;
+  background-color: #131414;
+  padding: 5em 25em 5em 25em;
+  text-align: center; }
+  footer .social button {
+    background-color: #eeeeee00;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out; }
+    footer .social button:hover {
+      transform: scale(1.55, 1.55); }
+    footer .social button img {
+      width: 30px; }
+  footer .signature {
+    max-width: 300px;
+    padding-top: 10px; }
+  footer .contact {
+    margin: 20px 0 10px 0; }
+    footer .contact .b-right {
+      border-right: 1px solid maroon;
+      padding-right: 20px; }
+    footer .contact h2 {
+      letter-spacing: 3px;
+      color: #505050;
+      font-weight: 100;
+      display: inline;
+      padding-left: 20px; }
+    footer .contact img {
+      width: 30px;
+      display: inline; }
 
 .hero-background {
   text-align: center; }
@@ -309,9 +322,12 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px; }
     .tools .tool-grid-container .tool-grid-item {
-      border: 1px solid #505050;
       padding: 0 150px;
-      color: #505050; }
+      color: #505050;
+      background-color: #131414;
+      transition: all 500ms ease-in-out; }
+      .tools .tool-grid-container .tool-grid-item:hover {
+        box-shadow: 0 5px 40px maroon; }
       .tools .tool-grid-container .tool-grid-item h1 {
         padding: 0 0 10px 0;
         font-size: 1.5em;
@@ -321,18 +337,49 @@ footer {
 .skills-section {
   height: auto;
   text-align: center;
-  padding: 45px 200px; }
+  padding: 45px 0; }
   .skills-section h1 {
     letter-spacing: 5px; }
   .skills-section .skills-grid-container {
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-gap: 20px;
-    border: 1.5px solid maroon; }
+    background-color: #131414;
+    transition: all 500ms ease-in-out; }
+    .skills-section .skills-grid-container:hover {
+      box-shadow: 0 5px 40px maroon; }
     .skills-section .skills-grid-container .skill-grid-item {
       padding: 20px; }
       .skills-section .skills-grid-container .skill-grid-item img {
-        width: 50%; }
+        width: 30%; }
+
+/****** Quote Slideshow Section ******/
+.quote {
+  height: 40vh;
+  background-image: url(../img/bg-coffee.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #505050;
+  background-blend-mode: multiply;
+  background-attachment: fixed; }
+
+/****** Portfolio Section ******/
+.portfolio {
+  height: auto;
+  background-color: white;
+  text-align: center;
+  padding: 80px 80px; }
+  .portfolio h1 {
+    letter-spacing: 5px; }
+  .portfolio .project-grid-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr; }
+    .portfolio .project-grid-container .project-grid-item img {
+      width: 100%;
+      height: 100%;
+      transition: all 300ms ease-in-out; }
+      .portfolio .project-grid-container .project-grid-item img:hover {
+        opacity: 0.3; }
 
 /*# sourceMappingURL=main.css.map */

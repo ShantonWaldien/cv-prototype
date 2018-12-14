@@ -147,6 +147,8 @@ nav > ul {
 
 .hire {
     transition: all 400ms ease-in-out;
+    color: $primary-color;
+    
     &:hover{
         background: $primary-color;
         color: $secondary-color;

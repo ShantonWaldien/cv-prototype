@@ -159,11 +159,17 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
+        
 
         .tool-grid-item {
-            border: 1px solid $textcolor;
             padding: 0 150px;
             color: $textcolor;
+            background-color: $tertiary-color;
+            transition: all 500ms ease-in-out;
+
+            &:hover {
+                box-shadow: 0 5px 40px $primary-color;
+            }
 
             h1 {
                 padding: 0 0 10px 0;
@@ -174,16 +180,13 @@
     }
 }
     
-
-    
-
-
 /****** Skills Section ******/
 
 .skills-section {
     height: auto;
     text-align: center;
-    padding: 45px 200px;
+    padding: 45px 0;
+    
 
     h1 {
         letter-spacing: 5px;
@@ -192,19 +195,76 @@
     .skills-grid-container {
         text-align: center;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
         grid-gap: 20px;
-        border: 1.5px solid $primary-color;
+        background-color: $tertiary-color;
+        transition: all 500ms ease-in-out;
+
+        &:hover {
+            box-shadow: 0 5px 40px $primary-color;
+        }
+        
 
         .skill-grid-item {
             padding: 20px;
+            
 
             img {
-                width: 50%;
+                width: 30%;
             }
         }
     }
 }
+
+
+
+/****** Quote Slideshow Section ******/
+
+.quote {
+    height: 40vh;
+    background-image: url(../img/bg-coffee.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: $textcolor;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+/****** Portfolio Section ******/
+
+.portfolio {
+    height: auto;
+    background-color: $secondary-color;
+    text-align: center;
+    padding: 80px 80px;
+
+    h1 {
+        letter-spacing: 5px;
+    }
+
+    .project-grid-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr;
+        
+        
+        .project-grid-item {
+            
+            
+            img {
+                width: 100%;
+                height: 100%;
+                transition: all 300ms ease-in-out;
+
+                &:hover {
+                    opacity: 0.3;
+                }
+            }
+        }
+
+    }
+}
+
+
 
 
 

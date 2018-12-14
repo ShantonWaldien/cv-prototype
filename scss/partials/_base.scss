@@ -20,7 +20,7 @@ body {
     height: 100vh;
     background-image: url(../img/bg-img1.jpg);
     background-size: cover;
-    background-color: #505050;
+    background-color: $textcolor;
     background-blend-mode: multiply;
     background-attachment: fixed;
 }
@@ -28,36 +28,57 @@ body {
 /********* Footer *********/
 
 footer {
-    height: 10vh;
-    padding: 0 10em 0 10em;
-}
+    height: 35vh;
+    background-color: $tertiary-color;
+    padding: 5em 25em 5em 25em;
+    text-align: center;
 
-.social {
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: all 300ms ease-in-out;
+    .social {
+       
+        button {
+            
+            background-color: #eeeeee00;
+            border: none;
+            cursor: pointer;
+            transition: all 300ms ease-in-out;
 
-    &:hover {
-        transform: scale(1.15,1.15);
+            &:hover {
+                transform: scale(1.55,1.55);
+            }
+            
+            img {
+                width: 30px;
+            }
+        }
     }
-}
 
-.github {
-    background-image: url(../img/github.png) ;
-}
+    .signature {
+        max-width: 300px;
+        padding-top: 10px;
+    }
 
-.linkedin {
-    background-image: url(../img/linkedin.png) ;
-}
+    .contact {
+        margin: 20px 0 10px 0;
 
-.gmail {
-    background-image: url(../img/gmail.png) ;
+        .b-right {
+            border-right: 1px solid $primary-color;
+            padding-right: 20px; 
+        }
+
+
+        h2 {
+            letter-spacing: 3px;
+            color: $textcolor;
+            font-weight: 100;
+            display: inline;
+            padding-left: 20px;
+        }
+
+        img {
+            width: 30px;
+            display: inline;
+        }
+    }
 }
 
 
