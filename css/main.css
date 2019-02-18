@@ -458,7 +458,13 @@ footer {
     grid-template-columns: 1fr 1fr 1fr; }
 
   .portfolio .project-grid-container {
-    grid-template-columns: 1.5fr; } }
+    grid-template-columns: 1.5fr; }
+
+  footer {
+    padding: 4em; }
+
+  footer .contact .b-right {
+    border: none; } }
 @media only screen and (max-width: 360px) {
   .hero-background .container {
     padding: 18em 5px; }
@@ -485,6 +491,16 @@ footer {
     padding: 0; }
 
   .hero-background .container {
-    font-size: 10px; } }
+    font-size: 10px; }
+
+  footer {
+    padding: 20px 0;
+    font-size: 10px; }
+    footer .contact {
+      display: inline-grid;
+      margin: 0; }
+
+  footer .contact .b-right {
+    border: none; } }
 
 /*# sourceMappingURL=main.css.map */
