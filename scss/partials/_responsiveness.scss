@@ -35,7 +35,7 @@
 @media only screen and (max-width: 360px) {
 
     .hero-background .container {
-        padding: 10em 0;
+        padding: 18em 5px;
     }
 
     .hero-background .container .name {
@@ -56,6 +56,18 @@
 
     .tools .tool-grid-container .tool-grid-item {
         padding: 10px;
+    }
+
+    .quote h1 {
+        font-size: 1.01em;
+    }
+
+    .portfolio {
+        padding: 0;
+    }
+
+    .hero-background .container {
+        font-size: 10px;
     }
 
 }
