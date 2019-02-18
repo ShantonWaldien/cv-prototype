@@ -48,7 +48,6 @@ footer {
       display: inline;
       padding-left: 20px; }
     footer .contact img {
-      width: 30px;
       display: inline; }
 
 /******** Navigation Bar styling starts here ******/
@@ -214,13 +213,12 @@ footer {
       display: inline;
       padding-left: 20px; }
     footer .contact img {
-      width: 30px;
       display: inline; }
 
 .hero-background {
   text-align: center; }
   .hero-background .container {
-    padding: 12em 0 10em 0; }
+    padding: 18em 0 10em 0; }
     .hero-background .container .hello {
       font-family: 'Amatic SC', cursive;
       text-transform: none;
@@ -312,11 +310,12 @@ footer {
 .tools {
   height: auto;
   text-align: center;
-  padding: 45px 200px;
   background-color: #131414; }
   .tools h1 {
     letter-spacing: 5px;
-    color: white; }
+    color: white;
+    margin: 0;
+    padding: 10px; }
   .tools .tool-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -447,5 +446,36 @@ footer {
     font-size: 0.8em; }
   .portfolio .fadeIn-bottom {
     top: 80%; }
+
+@media only screen and (max-width: 600px) {
+  .main .content-container-grid {
+    grid-template-columns: 1fr; }
+
+  .tools .tool-grid-container {
+    grid-template-columns: 1fr; }
+
+  .skills-section .skills-grid-container {
+    grid-template-columns: 1fr 1fr 1fr; }
+
+  .portfolio .project-grid-container {
+    grid-template-columns: 1.5fr; } }
+@media only screen and (max-width: 360px) {
+  .hero-background .container {
+    padding: 10em 0; }
+
+  .hero-background .container .name {
+    font-size: 3em; }
+
+  nav > ul button {
+    font-size: 0.8rem; }
+
+  .main .content-container-grid .content-grid-item .grid-item {
+    padding: 3em 1em; }
+
+  .skills-section .skills-grid-container {
+    grid-template-columns: 1fr 1fr; }
+
+  .tools .tool-grid-container .tool-grid-item {
+    padding: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
